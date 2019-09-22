@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="nav">
+          <div class="navbar">
+              <div class="logo">
+                <img src="assets/logo@2x.png">
+              </div>
+              <ul class="navbar-links">
+                <li><a href="#" style="color: #10C9C3">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="content-right"></div>
+      <div class="content">
+        <div class="content-wrapper">
+            <h3>We Design and Develop</h3>
+            <p>We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
+            <button onclick="window.location.href='#contact'">CONTACT US</button>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="content">
+        <h3>About Us</h3>
+        <p>Divide have don't man wherein air fourth. Own itself make have night won't make. A you under Seed appear which good give. Own give air without fowl moveth dry first heaven fruit, dominion she'd won't very all.</p>
+        <img src="assets/signature.png">
+      </div>
+    </div>
+    <div class="skill">
+          <div class="left">
+            <h3>Professional Skills</h3>
+            <div class="bars">
+              <span>UI/UX Design 75%</span>
+              <div class="bar">
+                <div class="bar-color1"></div>
+              </div>
+              <span>Web developmene 75%</span>
+              <div class="bar">
+                <div class="bar-color2"></div>
+              </div>
+              <span>UI/UX Design 75%</span>
+              <div class="bar">
+                <div class="bar-color3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img src="assets/book-pencil.png">
+          </div>
+      </div>
+      <div class="products">
+          <img src="assets/product-1.png" class="item">
+          <img src="assets/product-2.png" class="item">
+          <img src="assets/product-3.png" class="item">
+          <img src="assets/product-4.png" class="item">
+          <img src="assets/product-5.png" class="item">
+          <img src="assets/product-6.png" class="item">
+          <img src="assets/product-7.png" class="item">
+          <img src="assets/product-8.png" class="item">
+          <img src="assets/product-9.png" class="item">
+          <img src="assets/product-10.png" class="item">
+          <img src="assets/product-11.png" class="item">
+          <img src="assets/product-12.png" class="item">
+          <img src="assets/product-13.png" class="item">
+          <img src="assets/product-14.png" class="item">
+          <img src="assets/product-15.png" class="item">
+          <img src="assets/product-16.png" class="item">
+      </div>
+      <div class="load-more">
+          <a href="#" id="load">LOAD MORE WORK</a>
+      </div>
+      <div class="quote">
+        <img src="assets/quote.png">
+        <p class="quotation">“ Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.”</p>
+        <p class="writer">Michael Hopkins</p>
+      </div>
+      <div class="contact" id="contact">
+        <h3 class="need-project">Need a Project?</h3>
+        <p>Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
+        <div class="form">
+        <input class="name" placeholder="Your Name">
+        <input class="email" placeholder="Your Email">
+        <textarea class="comment" placeholder="Your Comment"></textarea>
+        <button class="send-message">SEND MESSAGE</button>
+        </div>
+        </div>
+        <footer>
+          <p class="company-name">Studio Design,Inc.</p>
+          <p class="copy-right">&copy; Studio Design.All rights reserved.</p>
+        </footer>
+  </div>
+  <script>
+      $(function() {
+        $(".item").slice(0, 8).show(); 
+        $("#load").click(function(e) { 
+          e.preventDefault();
+          $(".item:hidden").slice(0, 4).show(); 
+           if ($(".item:hidden").length == 0) { 
+             $(".load-more").hide()
+           }
+        });
+      });</script>
+</body>
+</html>
